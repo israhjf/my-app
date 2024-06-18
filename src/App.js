@@ -9,11 +9,13 @@ function App() {
     <div className="App">
       <Router>
         <NavBar />
-        <Routes>
-          <Route exact path="/" Component={Home}/>
-          <Route path="/altiplano" Component={Altiplano}/>
-          <Route path="/valles" Component={Valles}/>
-        </Routes>
+        <div className='pages'>
+          <Routes>
+            <Route exact path="/" Component={Home}/>
+            <Route path="/altiplano" Component={Altiplano}/>
+            <Route path="/valles" Component={Valles}/>
+          </Routes>
+        </div>
       </Router>
     </div>
   );
